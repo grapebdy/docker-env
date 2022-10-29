@@ -21,12 +21,13 @@ RUN apt-get install -y openssh-server net-tools iputils-arping iputils-ping
 RUN apt-get install -y make gcc g++ nasm
 RUN apt-get install -y gcc-aarch64-linux-gnu gcc-5-aarch64-linux-gnu
 RUN update-alternatives  --install /usr/bin/aarch64-linux-gnu-gcc aarch64-linux-gnu-gcc /usr/bin/aarch64-linux-gnu-gcc-7 7
-
 RUN apt-get install -y bison flex libncurses-dev libssl-dev bc libelf-devel
 
 # Install Kernel header
 RUN apt-get install -y linux-headers-$(uname -r)
 
+
+############################################
 # Install Python
 RUN apt-get install -y python
 
