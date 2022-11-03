@@ -14,7 +14,7 @@ ADD resources/apt/sources.list /etc/apt/
 RUN apt-get update
 
 # Install software
-RUN apt-get install -y git vim dialog ctags pkg-config sudo
+RUN apt-get install -y git vim dialog ctags pkg-config sudo zip
 RUN apt-get install -y openssh-server net-tools iputils-arping iputils-ping
 
 # Compile utils
